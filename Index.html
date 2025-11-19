@@ -4,48 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noahs Math Tools</title>
+
+    <style>
+        #homeBtn {
+            margin-top: 20px;
+            padding: 0.6em 1.2em;
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 18px;
+            background-color: rgba(255, 255, 255, 0.15);
+            color: #eee;
+            text-decoration: none;
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.25s;
+        }
+
+        #homeBtn:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: white;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+
+            background: linear-gradient(45deg, #000000, #ff7a00);
+            background-size: 400% 400%;
+            animation: bgshift 4s ease infinite;
+
+            color: white;
+        }
+
+        @keyframes bgshift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
 </head>
- <style>
-            #homeBtn {
-    margin-top: 20px;
-    padding: 0.6em 1.2em;
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 18px;
-    background-color: rgba(255, 255, 255, 0.15);
-    color: #eee;
-    text-decoration: none;
-    backdrop-filter: blur(6px); /* makes it somewhat clear */
-    -webkit-backdrop-filter: blur(6px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.25s;
-}
-
-#homeBtn:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    color: white;
-}
-    
-            html, body {
-                height: 100%;
-                margin: 0;
-                overflow: hidden;
-
-                background: linear-gradient(45deg, #000000, #ff7a00);
-                background-size: 400% 400%;
-                animation: bgshift 4s ease infinite;
-
-                color: white;
-            }
-
-            @keyframes bgshift {
-                0% { background-position: 0% 50%; }
-                50% { background-position: 100% 50%; }
-                100% { background-position: 0% 50%; }
-            }
-</style>
 
 <body>
     <a id="homeBtn" href="https://noahhuffine.github.io/Emulator/" target="_blank">Emulator</a>
