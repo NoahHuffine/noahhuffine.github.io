@@ -45,11 +45,37 @@
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
+        #messageBox {
+    position: fixed;               
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 1.5em 2em;
+    background: rgba(0, 0, 0, 0.45);  
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 1em;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    max-width: 80%;
+}
     </style>
 </head>
 
 <body>
     <a id="homeBtn" href="https://noahhuffine.github.io/Emulator/" target="_blank">Emulator</a>
     <a id="homeBtn" href="https://noahhuffine.github.io/Games/" target="_blank">Games</a>
+    <div id="messageBox">
+    <p>Welcome to Noahs Math Tools</p>
+    <p>If you want roms for the  emulator go to https://github.com/NoahHuffine/Roms/blob/c6bacc54d287536daaccfb95a665d89ceba2e9b4/README.md</p>
+</div>
+
 </body>
 </html>
